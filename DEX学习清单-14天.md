@@ -1,4 +1,4 @@
-# DEX 学习清a单（14 天可执行版）
+# DEX 学习清单（14 天可执行版）
 
 ## 使用方式
 
@@ -6,8 +6,29 @@
 - 每天必须产出 1 个可验证结果：笔记、脚本、测试或最小页面。
 - 遇到看不懂的函数，先画调用链，再回到业务语义。
 
+## 学习前置（扫盲：0.5-1 天）
+
+- 钱包与地址：说清私钥、公钥、地址关系，并画出“签名 -> 广播 -> 确认”流程。
+- ERC-20：掌握 `transfer`、`approve`、`transferFrom` 与 `Approval`/`Transfer` 事件。
+- 交互逻辑：理解 Gas Fee 与 EIP-1559，搞清楚为什么常见流程是 `approve -> swap`。
+- 保护参数：理解 `amountOutMin`、`deadline` 在交易保护中的作用。
+
+### 扫盲资料（必读）
+
+- Ethereum 账户文档: <https://ethereum.org/zh/developers/docs/accounts/>
+- ERC-20 标准: <https://eips.ethereum.org/EIPS/eip-20>
+- Gas 机制（EIP-1559）: <https://ethereum.org/zh/developers/docs/gas/>
+- Uniswap V2 合约总览: <https://docs.uniswap.org/contracts/v2/overview>
+- Uniswap 路由参考: <https://docs.uniswap.org/contracts/v2/reference/smart-contracts/router-02>
+
+### 扫盲产出
+
+- 一页《Web3 基础扫盲笔记》。
+- 一张“钱包签名 + 授权 + 兑换”最小流程图。
+
 ## 阶段目标
 
+- 预热（0.5-1 天）：完成 Web3 基础扫盲，打通钱包/代币/交易链路概念。
 - 第 1-4 天：打牢 AMM 与 Uniswap V2 核心模型。
 - 第 5-9 天：打通 Router、前端调用与链上交互闭环。
 - 第 10-12 天：理解 V3 集中流动性与工程化工具链。
@@ -340,4 +361,3 @@
 - 优先“少而深”：每次只跟 1 条调用链，不要同时开多个协议。
 - 每天记录“一个业务问题 + 一个代码证据 + 一个结论”。
 - 只要遇到不确定就回到源码和测试，不靠二手总结。
-
